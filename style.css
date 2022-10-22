@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin:1px;
+}
+.header{
+    font-family: 'Montserrat', sans-serif;
+    padding:30px;
+}
+header{
+
+    display:flex;
+    margin:0;
+    padding:0;
+    height:150px;
+   
+    
+}
+
+h1, ul{
+    position:sticky;
+    top:0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:#fff0f0;
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:none;
+    color:aliceblue;
+    font-weight:600px;
+    padding:20px;
+    top:20px;
+    display: inline-block;
+    border: white 5px solid;
+    border-radius:10px;
+    
+}
+nav{
+    margin: 10px;
+    padding:30px;
+}
+.bukv{
+    color:black;
+    border:0px white solid;
+    width: 50px;
+    height: 50px;
+
+}
+ul{
+    font-size:28px;
+    color:red
+}
+#warning{
+    color:black;
+    fill: #fff0f0;
+    
+}
+#warning>*{
+    font-weight:700px
+}
+#warningbody>*{
+    text-align:center;
+
+}
+#warningbody>a{
+    width: 100%;
+    left:500px;
+    display:inline-flexbox
+    
+}
+#backwarn{
+    border:0px;
+    color:black;
+}
+.backword{
+    color:black;
+}
+header {
+    background-image: linear-gradient(to right, #ff7300, #7509e0, #09e07f);
+  }
+img{
+    width:100px;
+    height:100px;
+    border:#fff0f0 0px solid;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    margin:0px 0px 0px 50%;
+}
+#warningbody>h1, ul{
+    position: relative;
+}
+#warningbody{
+    background-image: linear-gradient(to right, #ff7300, #7509e0, #09e07f);
+}
+#notsticky{
+    position: static;
+    text-align: center;
+}
+footer>*{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+footer{
+    background-color: #231709;
+    padding: 20px;
+}
