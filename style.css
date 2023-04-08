@@ -18,7 +18,7 @@ header{
    
     
 }
-
+    
 h1, ul{
     
     top:0;
@@ -52,7 +52,7 @@ body{
 .nav:hover{
     background-color:#231709;
     color:white;
-    transition:0.3s ;
+    
 }
 nav{
     margin: 10px;
@@ -68,7 +68,6 @@ nav{
 .bukv:hover{
     background-color: #231709;
     color: white;
-    transition:0.4s;
 }
 ul{
     font-size:28px;
@@ -88,7 +87,6 @@ ul{
 #warning>*{
     font-weight:700px;
     text-align: center;
-
 }
 #warningbody>*{
     text-align:center;
@@ -127,7 +125,6 @@ ul{
 #backwarn:hover{
     color:white;
     background-color: black;
-    transition:0.2s;
 }
 #backwarn>*{
     text-align: center;
@@ -136,11 +133,7 @@ ul{
     color:black;
 }
 header {
-    background-color: #231709;
-    -webkit-animation: bgcolor 20s infinite;
-    animation: headertrans 5s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+    background-image: linear-gradient(to right, #ff7300, #7509e0, #09e07f);
   }
 img{
     width:100px;
@@ -203,8 +196,7 @@ h3{
     background-image: linear-gradient(to right, #0ff238, #0ff2a3,#8df00c);
     transition: width 2s linear 1s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    color:black;
-    transition: 0.5s;
+    color:black
     
 
 }
@@ -219,43 +211,88 @@ div{
     background-color: white;
     position: sticky;
 }
-@keyframes bgcolor {
-    0% {
-        color: #45a3e5
-    }
+#darktheme{
+    width:20px;
+    height:20px;
 
-    30% {
-        color: #66bf39
-    }
+    cursor: pointer;
 
-    60% {
-        color: #eb670f
-    }
-
-    90% {
-        color: #f35
-    }
-
-    100% {
-        color: #864cbf
-    }
 }
-#black{
-    color:black;
-    opacity: 75%;
+#labelp{
+    display:contents;
+    font-size: 18px;
+    
 }
-#back    {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 5s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+label{
+    border: 10px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
 }
-.nav:hover{
-    -webkit-animation: navcolor 20s infinite;
-    animation: navcolor 5s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+
+label:hover{
+    background-color: #231709;
+    border: 10px solid #231709;
+    color: white;
+}
+
+#checkbox:checked~ {
+    background-color: red;
 }
 
 
+.center{
+    display: flex;
+    justify-content: center;
+    
+}
 
+.center *{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sticky1{
+    position: sticky;
+}
+.searchinput{
+    border: 0px;
+    height: 50px;
+    width:160px;
+    border-radius: 12px 0px 0px 12px;
+    background: #8a2387;
+    background: -webkit-linear-gradient(90deg, #8a2387 0%, #e94057 50%, #f27121 100%);
+    background: linear-gradient(90deg, #8a2387 0%, #e94057 50%, #f27121 100%);
+    color: white;
+    font-weight: 500;
+}
+
+.searchinput:hover{
+    background: #d463d2;
+    background: -webkit-linear-gradient(90deg, #d463d2 0%, #ef798c 50%, #ffd775 100%);
+    background: linear-gradient(90deg, #d463d2 0%, #ef798c 50%, #ffd775 100%);
+    transition: 1s;
+}
+#searchicon{
+    border: 0px;
+    height: 50px;
+    border-radius: 0px 12px 12px 0px;
+    cursor: pointer;
+    width:90px;
+    background: #6cef5e;
+    background: -webkit-linear-gradient(90deg, #6cef5e 0%, #3997e9 100%);
+    background: linear-gradient(90deg, #6cef5e 0%, #3997e9 100%);
+}
+#searchicon:hover{
+    transition: 1s;
+    background: #a1ffe2;
+    background: -webkit-linear-gradient(90deg, #a1ffe2 0%, #acffa8 50%, #dfffc7 100%);
+    background: linear-gradient(90deg, #a1ffe2 0%, #acffa8 50%, #dfffc7 100%);
+    
+}
+::placeholder{
+    color:white;
+    
+}
