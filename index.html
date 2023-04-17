@@ -8,7 +8,9 @@
     <title>Online Словарь Ожегова - bwh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.png">
-</head>
+
+
+<head>
 <body id="index">
     <!-- Preloader element -->
     <div id="preloader">
@@ -27,7 +29,16 @@
     </header>
     
     <main>
+
+
+
+
         
+
+
+
+
+
         <nav class="glasnsogl">
             <h1 class="glasnsogl">Гласные</h1>
             <a class="bukv a" href="А.html">А</a>
@@ -52,7 +63,6 @@
             
             <a class="bukv a" href="Й.html">Й</a>
             <a class="bukv a" href="К.html">К</a>
-            <a class="bukv a" href="Л.html">Л</a>
             <a class="bukv a" href="М.html">М</a>
             <a class="bukv a" href="Н.html">Н</a>
             
@@ -70,25 +80,34 @@
 
             
         </nav>
-        
+
+        <article class="updart">
+            <div class="    ">
+            <h1 id="updatehead" сlass="updateside">Следующее обновление:</h1>
+            <h1 id="updatetimer" сlass="updateside"></h1>
+            <h1 id="updateinfo" сlass="updateside">22 Апреля, 2023</h1>
+            </div>
+        </article><br>
+
+
         <h1 id="notsticky">Заметки:</h1><br>
         <h3>Android приложение уже здесь!</h3>
-        <div class="downloaddiv"><a class='a nav me download' id="downloadBtn" href='https://drive.google.com/drive/folders/1hh6-3dePWyFqJiv9PtFpW3UhcYdPGCY6?usp=sharing'>Установить</a></div>
+        <div class="downloaddiv"><a class='a nav me download' id="downloadBtn" href="https://drive.google.com/drive/folders/1hh6-3dePWyFqJiv9PtFpW3UhcYdPGCY6?usp=sharing">Установить</a></div>
         <h3 style="color:red">ВНИМАНИЕ: Только для Android смартфонов</h3>
         <h3>В данном приложении <u>нет</u> вирусов, если телефон начнет блокировать данное приложение, добавьте в список исключений</h3>
-        
+        <h3>Чтобы установить, перейдите по кнопке и загрузите данный файл</h3>
         <h3></h3>
         <br><br><br>
         <h1 id="notsticky">Скоро:</h1><br>
-        <h3>Адаптация под телефоны(очень скоро!)</h3>
-        <h3>Редизайн страниц!</h3>  
+        <h3>    </h3>
+        <h3></h3>  
         
         <h3></h3>
         <br><br><br>
         <h1 id="notsticky">Спасибо за репорт багов:</h1><br>
         <h3>Аким Чупапимуняню</h3>
         <h3>Бану Аббаслы</h3>
-        <h3>kartoshka</h3>
+        <h3></h3>
         <h3></h3>
         <h3></h3>
         <br><br><br><br><br>
@@ -101,6 +120,7 @@
                 <h3>Доработали функционал! {4/8/2023}</h3>
         <h3>Добавили картинку в страницах букв(работает на компьютере) {10/25/2022}</h3>
         <h3>Правописание, баги и др. {10/27/2022}</h3>
+        
         <h3></h3>
         <br><br><br>
         
@@ -118,5 +138,36 @@
      
 </body>
 <script src="script.js"></script>
-<script src="download.js"></script>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("Apr 22, 2023 13:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("updatetimer").innerHTML = days + ":" + hours + ":"
+  + minutes + ":" + seconds + "";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("updatetimer").innerHTML = "Обновляем сейчас...";
+    document.getElementById("updateinfo").innerHTML = "Попробуйте перезагрузить страницу";
+  }
+}, 1000);
+</script>
+
 </html>
