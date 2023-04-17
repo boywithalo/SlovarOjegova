@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Color+Emoji&family=Yeseva+One&display=swap');
     #content{
         margin: 0;
     }
@@ -398,6 +398,58 @@
     }
   }
 
+.updateside{
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+
+}
+
+
+.updart{
+    text-align: center;
+    background-image: url(leaves.png);
+    background-size:auto;
+    height:250px;
+    color: white;
+    border-radius: 20px;
+    border: black 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.updart>*{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size:20px;
+    margin:0    
+    
+}
+.updartdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 320px) and (max-width: 700px){
@@ -427,6 +479,9 @@
         padding-left: 10px;
         padding-top: 6.5px;
         
+    }
+    .updart>*{
+        font-size: 15px;
     }
 }
 @media (min-width: 320px) and (min-height: 700px) and (max-width: 360px) and (max-height: 750px){
