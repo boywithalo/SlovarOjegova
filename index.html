@@ -166,6 +166,9 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("updatetimer").innerHTML = "Обновляем сейчас...";
     document.getElementById("updateinfo").innerHTML = "Попробуйте перезагрузить страницу";
+    setTimeout(function() {
+    window.location.href = "https://boywithalo.github.io/OSOUpdater/";
+    }, 3000);
   }
 }, 1000);
 </script>
