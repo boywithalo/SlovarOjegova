@@ -79,6 +79,7 @@
         border:0px white solid;
         width: 50px;
         height: 50px;
+        text-align: center;
 
     }
     .bukv:hover{
@@ -555,3 +556,117 @@
     text-align: center;
     font-weight: 700;
 }
+
+
+
+
+#back-to-top{
+    position: fixed;
+    bottom: 70px;
+    left: 30px;
+    display: none;
+    z-index: 9999;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    background-color:cadetblue;
+    color: white;
+    text-decoration: none;
+}
+
+
+.glasnsogl{
+    text-align: center;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.centerized{
+    text-align: center;
+
+}
+
+.pfp{
+    padding-top: 50px;
+}
+.divcent{
+    padding-top: 300px;
+}
+
+
+#submitter{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 05px;
+    background-color: #231709;
+    color: white;
+}
+
+
+#pinInput{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+           -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+   
+   .input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+
+
+   button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid darkolivegreen;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: darkolivegreen;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button:hover {
+    color: black;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
+  }
