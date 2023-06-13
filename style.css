@@ -670,3 +670,44 @@
   button:hover:before {
     transform: translateX(15em);
   }
+
+  @media (prefers-color-scheme: dark) {
+
+
+
+    body{
+        background-color: #241f15;
+        color: white;
+    }
+    .nav{
+        background-color: #231709;
+        color: white;
+        opacity: 100%;
+    }
+    .nav:hover{
+        background-color: white;
+        color: #231709;
+    }
+    .bukv{
+        color: white;
+        font-weight: 700;
+    }
+    header{
+        opacity: 91%;
+    }
+    .download{
+        background-color: #46aa91  ;
+    }
+    #preloader{
+        background-color: #241f15;
+    }
+    #container::after{
+        background-color: #241f15;
+        border: solid 5px #241f15;
+    }
+    #container{
+        background-color: #241f15;
+        border: solid 5px #241f15;
+    }
+  }
+  
